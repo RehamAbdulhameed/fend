@@ -67,8 +67,10 @@ function checkActive() {
 
         if (sectionTop < trigger && sectionBottom> trigger) {
             item.classList.add('active')
+            sections[idx].classList.add('active')
         } else {
             item.classList.remove('active')
+            sections[idx].classList.remove('active')
         }
     })
 }
